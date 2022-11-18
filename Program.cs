@@ -56,7 +56,7 @@ namespace Exercises
         {
             int[] newArray = new int[size];
 
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 newArray[i] = arr[i];
             }
