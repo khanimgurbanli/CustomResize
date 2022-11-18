@@ -1,4 +1,4 @@
-﻿namespace Exercises
+namespace Exercises
 {
     class Program
     {
@@ -28,7 +28,7 @@
 
                 } while (check);
 
-                Array.Resize(ref array,i+1);
+                CountSize(ref array,i+1);
                 array[i] = intNumber;
             }
             return array;
@@ -50,6 +50,17 @@
                 sum += arr[i];
             }
             return sum;
+        }
+
+        static void CountSize(ref int[] arr, int size)
+        {
+            int[] newArray = new int[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                newArray[i] = arr[i];
+            }
+            arr = newArray;
         }
     }
 }
