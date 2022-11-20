@@ -63,4 +63,79 @@ namespace Exercises
             arr = newArray;
         }
     }
+    /*
+    
+int[] returnArr = GetValue();
+Console.WriteLine($"Sum is : {Sum(returnArr)}");
+
+
+static int[] GetValue()
+{
+    int[] numbers = new int[0];
+
+    int count = 0;
+    for (int i = 0; i < 2; i++)
+    {
+        int intNumber = 0;
+        bool checkLoop = true;
+        do
+        {
+
+            if (i == count) Console.WriteLine($"Enter please {count+1}. number must be different from 0");
+            string numb = Console.ReadLine();
+
+            bool returnResult = CheckNumber(numb,out intNumber);
+
+
+            if (returnResult) checkLoop = false;
+
+        } while (checkLoop);
+
+        Resize(ref numbers, i + 1);
+        numbers[i] = intNumber;
+
+        count++;
+    }
+
+    return numbers;
+}
+
+static bool CheckNumber( string data,out int number)
+{
+    bool checkNumber = int.TryParse(data, out number);
+    if (checkNumber && number > 0) return checkNumber;
+    else return false;
+}
+
+static double Sum(int[] arr)
+{
+    double sum = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+static void Resize(ref int[] arr, int size)
+{
+    int[] myNewArr = new int[size];
+    if (arr.Length > size)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            myNewArr[i] = arr[i];
+        }
+        arr = myNewArr;
+    }
+    else if(arr.Length < size)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            myNewArr[i] = arr[i];
+        }
+        arr = myNewArr;
+    }
+}
+    */
 }
